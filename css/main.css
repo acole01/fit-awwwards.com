@@ -96,15 +96,46 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*
+.pie-slice{
+	background-color: red;
+	height: 80px;
+	
+}
 
+.pie-fill{
+	width:80%;
+	height: 80px;
+	background-color: silver;
+	display: inline-block;
+}
+*/
+.pie,
+.pie-slice{
+	position: relative;
+		
+}
 
-
-
-
-
-
-
-
+.pie-slice{
+	height: 200px;
+	width: 200px;
+	border: 20px solid yellow;
+}
+.pie-fill {
+	position: absolute;
+	top:-20px;
+	left: -20px;
+	width:200px;
+	height: 200px;
+	border: 20px solid aqua;
+	clip: rect(0, 160px, 160px, 0);
+	-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+}
+.pie-slice,
+.pie-fill {
+	border-radius: 100%;
+}
 
 
 
